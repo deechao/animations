@@ -8,7 +8,9 @@
 
     Colour Palette:
     ---------------
-    Glowing Blue/Teal: #21ebff
+    Neon Style Blue: #21ebff
+    Neon Style Purple: #bc13fe
+    Neon Style Green: 39ff14
     Background Color: #000 
 
     ===========================================
@@ -27,40 +29,82 @@ html {
 body {
   box-sizing: border-box;
   font-family: "Roboto Mono", monospace;
-  width: 100%;
   height: 100vh;
   background-color: #000;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   color: whitesmoke;
   text-transform: uppercase;
 }
 
+/*========================================================================/
+============================== ANCHOR STYLING ============================
+/========================================================================*/
+
+a:link,
+a:visited {
+  position: relative;
+  margin: 3rem;
+  padding: 1.5rem 3rem;
+  display: inline-block;
+  color: #21ebff;
+  text-decoration: none;
+  font-size: 3rem;
+  overflow: hidden;
+}
+
+a:nth-child(2) {
+  filter: hue-rotate(115deg); /*Turns color Purple Neon*/
+}
+
+a:nth-child(4) {
+  filter: hue-rotate(270deg); /*Turns color Green Neon*/
+}
+
+/*========================================================================/
+=============================== GLOW STYLING =============================
+/========================================================================*/
+
 .glow {
   border: 2px solid #21ebff;
+  margin: 1rem;
   padding: 1rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 
-a:link,
-a:visited {
-  margin: 3rem;
-  padding: 1.5rem 3rem;
-  position: relative;
-  display: inline-block;
-  color: #21ebff;
-  text-decoration: none;
-  font-size: 3rem;
+.glow a:link,
+.glow a:visited {
   border-radius: 8rem;
 }
 
-a:hover {
+.glow a:hover {
   color: #000;
   background-color: #21ebff;
   box-shadow: 0 0 4rem #21ebff;
+}
+
+/*========================================================================/
+========================== CORNER BORDER STYLING =========================
+/========================================================================*/
+
+.border1 {
+  border: 2px solid #21ebff;
+  margin: 1rem;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.border1 a:hover {
+  border-top: 2px solid #21ebff;
+  border-left: 2px solid #21ebff;
 }
