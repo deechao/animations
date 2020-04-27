@@ -65,8 +65,8 @@ a:nth-child(4) {
 ===================== BASIC STYLING FOR ALL SECTIONS =====================
 /========================================================================*/
 
-.glow,
-.border1 {
+.hover1,
+.hover2 {
   border: 2px solid #21ebff;
   margin: 1rem;
   padding: 1rem;
@@ -81,12 +81,12 @@ a:nth-child(4) {
 =============================== GLOW STYLING =============================
 /========================================================================*/
 
-.glow a:link,
-.glow a:visited {
+.hover1 a:link,
+.hover1 a:visited {
   border-radius: 8rem;
 }
 
-.glow a:hover {
+.hover1 a:hover {
   color: #000;
   background-color: #21ebff;
   box-shadow: 0 0 4rem #21ebff;
@@ -96,7 +96,7 @@ a:nth-child(4) {
 ========================== CORNER BORDER STYLING =========================
 /========================================================================*/
 
-.border1 a:hover {
+a:hover {
   border-top: 2px solid #21ebff;
   border-left: 2px solid #21ebff;
 }
