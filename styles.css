@@ -1,0 +1,56 @@
+/*  ===========================================
+    ===========================================
+
+    Project: Animation Stylig
+
+    Notes: Personal Project
+
+
+    Colour Palette:
+    ---------------
+    Glowing Blue/Teal: #21ebff
+    Background Color: #000 
+
+    ===========================================
+    ===========================================  */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%; /*Equivalent to 10px*/
+}
+
+body {
+  box-sizing: border-box;
+  font-family: "Roboto Mono", monospace;
+  width: 100%;
+  height: 100vh;
+  background-color: #000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: whitesmoke;
+  text-transform: uppercase;
+}
+
+a:link,
+a:visited {
+  margin: 3rem;
+  padding: 1.5rem 3rem;
+  position: relative;
+  display: inline-block;
+  color: #21ebff;
+  text-decoration: none;
+  font-size: 3rem;
+}
+
+a:hover {
+  color: #000;
+  background-color: #21ebff;
+  box-shadow: 1rem 1rem 1rem #21ebff;
+}
