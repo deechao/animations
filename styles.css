@@ -9,8 +9,6 @@
     Colour Palette:
     ---------------
     Neon Style Blue: #21ebff
-    Neon Style Purple: #bc13fe
-    Neon Style Green: 39ff14
     Background Color: #000 
 
     ===========================================
@@ -64,10 +62,11 @@ a:nth-child(4) {
 }
 
 /*========================================================================/
-=============================== GLOW STYLING =============================
+===================== BASIC STYLING FOR ALL SECTIONS =====================
 /========================================================================*/
 
-.glow {
+.glow,
+.border1 {
   border: 2px solid #21ebff;
   margin: 1rem;
   padding: 1rem;
@@ -77,6 +76,10 @@ a:nth-child(4) {
   align-items: center;
   position: relative;
 }
+
+/*========================================================================/
+=============================== GLOW STYLING =============================
+/========================================================================*/
 
 .glow a:link,
 .glow a:visited {
@@ -92,17 +95,6 @@ a:nth-child(4) {
 /*========================================================================/
 ========================== CORNER BORDER STYLING =========================
 /========================================================================*/
-
-.border1 {
-  border: 2px solid #21ebff;
-  margin: 1rem;
-  padding: 1rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-}
 
 .border1 a:hover {
   border-top: 2px solid #21ebff;
